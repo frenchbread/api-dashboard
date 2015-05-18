@@ -15,8 +15,18 @@ block content
     .row(style="padding:20px")
         .col-md-7(style="padding:0")
             legend Overview
+            h4 Pick a date range
+            form.form-inline#datepicks
+                input#startDate(type="text" class="form-control" style="width:200px" placeholder="Start date")
+                a &#160;-&#160;
+                input#endDate(type="text" class="form-control" style="width:200px" placeholder="End date")
+                &#160;
+                button.btn.btn-default#apply Apply
             canvas#eventsChart(height="200px")
+            hr
         .col-md-5
             #jsonhere
+
 block src
     script(src='/js/events.js')
+    script(src='/vendor/js/bootstrap-datepicker.js')
