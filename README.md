@@ -15,3 +15,7 @@ and
 ```
 node app.js
 ```
+
+## License
+
+API-dashboard is freely distributable under the terms of the [MIT license](https://github.com/frenchbread/api-dashboard/blob/master/LICENSE.md).
